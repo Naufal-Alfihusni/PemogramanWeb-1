@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0" />
+    <title>Form Pemesanan Barang</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="font-family: 'Quicksand', sans-serif; margin: 0; padding: 0">
+    <!-- <header
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 3px solid #384b70;
+        /* margin: 10px; */
+        padding-bottom: 20px;
+        padding-top: 20px;
+        text-transform: capitalize;
+        background-color: #b8001f;
+      "
+    >
+      <nav
+        style="
+          gap: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <a
+          href="#"
+          style="color: #fcfaee; font-weight: 600; text-decoration: none"
+          >beranda</a
+        >
+        <a
+          href="#"
+          style="color: #fcfaee; font-weight: 600; text-decoration: none"
+          >produk</a
+        >
+        <a
+          href="#"
+          style="color: #fcfaee; font-weight: 600; text-decoration: none"
+          >tentang</a
+        >
+        <a
+          href="#"
+          style="color: #fcfaee; font-weight: 600; text-decoration: none"
+          >login</a
+        >
+      </nav>
+    </header> -->
+    <main
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px;
+        gap: 3rem;
+        flex: 1 1;
+        background-color: #fcfaee;
+        color: #384b70;
+      "
+    >
+      <div
+        style="
+          width: 30%;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          vertical-align: top;
+          /* border: 1px solid black; */
+          gap: 2rem;
+        "
+      >
+        <img
+          src="/pertemuan3/tugas/image/Nike Precision 4 'Black White' CK1069-001 US 7½.jpg"
+          alt=""
+          style="
+            width: 350px;
+            height: 350px;
+            border-radius: 15px;
+            box-shadow: 8px 8px 0px 1px #e88d67;
+            border-top: 2px solid #e88d67;
+            border-left: 2px solid #e88d67;
+          "
+        />
+
+        <label
+          for="foto"
+          style="
+            display: inline-block;
+            padding: 10px 20px 0px 10px;
+            width: 10rem;
+            height: 2rem;
+            text-transform: capitalize;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            font-size: medium;
+            border-radius: 12px;
+            color: #fcfaee;
+            background-color: #b8001f;
+            box-shadow: 7px 7px 0px 1px #e88d67;
+            border: none;
+            text-align: center;
+            cursor: pointer;
+          "
+        >
+          upload foto
+        </label>
+        <input
+          type="file"
+          id="foto"
+          name="foto"
+          accept="image/*"
+          style="display: none"
+        />
+      </div>
+      <div style="width: 40%; height: 100vh">
+        <form action="/pertemuan3/tugas/form_hasil_pesanan.html" method="post">
+          <table style="text-transform: capitalize">
+            <tr>
+              <td style="width: 27%; padding-bottom: 30px; font-weight: 600">
+                <label for="nama-barang">nama barang :</label>
+              </td>
+              <td style="padding-bottom: 30px">
+                <input
+                  type="text"
+                  name="nama-barang"
+                  id="nama-barang"
+                  required
+                  placeholder="sepatu nike"
+                  style="
+                    width: 25rem;
+                    height: 2rem;
+                    border-radius: 12px;
+                    border: 2px solid #e88d67;
+                    padding-left: 10px;
+                    text-transform: capitalize;
+                  "
+                />
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding-bottom: 30px;
+                  vertical-align: top;
+                  font-weight: 600;
+                "
+              >
+                <label for="deskripsi">deskripsi :</label>
+              </td>
+              <td style="padding-bottom: 30px">
+                <textarea
+                  name="deskripsi"
+                  id="deskripsi"
+                  required
+                  placeholder="tahun, model, kondisi, dll"
+                  style="
+                    width: 25rem;
+                    height: 5rem;
+                    border-radius: 12px;
+                    border: 2px solid #e88d67;
+                    padding: 10px;
+                  "
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-bottom: 30px; font-weight: 600">
+                <label for="noakun">no akun :</label>
+              </td>
+              <td style="padding-bottom: 30px">
+                <input
+                  type="number"
+                  name="noakun"
+                  id="noakun"
+                  minlength="10"
+                  maxlength="12"
+                  required
+                  placeholder="1234567890"
+                  style="
+                    width: 25rem;
+                    height: 2rem;
+                    border-radius: 12px;
+                    border: 2px solid #e88d67;
+                    padding-left: 10px;
+                  "
+                />
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-bottom: 30px; font-weight: 600">
+                <label for="bank">bank :</label>
+              </td>
+              <td style="padding-bottom: 30px">
+                <select
+                  name="bank"
+                  id="bank"
+                  style="
+                    width: 11rem;
+                    height: 2rem;
+                    border-radius: 12px;
+                    border: 2px solid #e88d67;
+                    text-align: center;
+                  "
+                >
+                  <option value="bni">BNI</option>
+                  <option value="ms">MANDIRI SYARIAH</option>
+                  <option value="bca">BCA</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-bottom: 30px; font-weight: 600">
+                <label for="nama">nama :</label>
+              </td>
+              <td style="padding-bottom: 30px">
+                <input
+                  type="text"
+                  name="nama"
+                  id="nama"
+                  required
+                  placeholder="Naufal Alfihusni"
+                  style="
+                    width: 25rem;
+                    height: 2rem;
+                    border-radius: 12px;
+                    border: 2px solid #e88d67;
+                    padding-left: 10px;
+                    text-transform: capitalize;
+                  "
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                style="
+                  vertical-align: top;
+                  padding-bottom: 30px;
+                  font-weight: 600;
+                "
+              >
+                <label for="transaksi">transaksi:</label>
+              </td>
+              <td style="padding-bottom: 30px">
+                <input
+                  type="number"
+                  name="transaksi"
+                  id="transaksi"
+                  value="1"
+                  required
+                  min="1"
+                  max="100"
+                  style="
+                    width: 3rem;
+                    height: 1.5rem;
+                    border-radius: 12px;
+                    border: 2px solid #e88d67;
+                    margin-bottom: 10px;
+                    text-align: center;
+                  "
+                />
+                <br />
+                <input type="checkbox" name="sendmassage" id="" value="" />kirim
+                ke phone
+                <br />
+                <input type="checkbox" name="sendmassage" id="" value="" />kirim
+                ke email
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-bottom: 30px; font-weight: 600">
+                <label for="notelp">kirim ke phone :</label>
+              </td>
+              <td style="padding-bottom: 30px">
+                <input
+                  type="tel"
+                  name="notelp"
+                  id="notelp"
+                  pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                  placeholder="0812-3456-7890"
+                  style="
+                    width: 15rem;
+                    height: 2rem;
+                    border-radius: 12px;
+                    border: 2px solid #e88d67;
+                    padding-left: 10px;
+                  "
+                />
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-bottom: 30px; font-weight: 600">
+                <label for="email">kirim ke email :</label>
+              </td>
+              <td style="padding-bottom: 30px">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="contoh@gmail.com"
+                  style="
+                    width: 15rem;
+                    height: 2rem;
+                    border-radius: 12px;
+                    border: 2px solid #e88d67;
+                    padding-left: 10px;
+                  "
+                />
+              </td>
+            </tr>
+          </table>
+          <br />
+          <button
+            type="submit"
+            style="
+              width: 25rem;
+              height: 3rem;
+              text-transform: capitalize;
+              font-family: 'Quicksand', sans-serif;
+              font-weight: 700;
+              font-size: medium;
+              border-radius: 12px;
+              color: #fcfaee;
+              background-color: #b8001f;
+              box-shadow: 7px 7px 0px 1px #e88d67;
+              border: none;
+              cursor: pointer;
+            "
+          >
+            pesan sekarang!
+          </button>
+        </form>
+      </div>
+    </main>
+    <!-- <footer
+      style="
+        height: 25vh;
+        color: #fcfaee;
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        background-color: #b8001f;
+        border-top: 3px solid #384b70;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          padding: 0px 0px 5px 15px;
+          width: 10rem;
+          justify-content: left;
+          background-color: #b8001f;
+          align-items: left;
+        "
+      >
+        <h3>sosial media</h3>
+        <hr style="width: 10rem; text-align: left" />
+        <div style="display: flex; flex-direction: column; gap: 5px">
+          <a
+            href="https://www.instagram.com/alfi_1215/"
+            style="color: #fcfaee; text-decoration: none"
+            >Instagram</a
+          >
+          <a
+            href="https://youtube.com/@channelrandom366?si=oi-GjTjsa76Y_6Kw"
+            style="color: #fcfaee; text-decoration: none"
+            >Youtube</a
+          >
+        </div>
+      </div>
+      <p
+        style="
+          text-align: center;
+          padding: 0px 0px 0px 5px;
+          align-self: center;
+          background-color: #b8001f;
+          width: 100vh;
+          text-transform: capitalize;
+          font-weight: 700;
+        "
+      >
+        copyright&#169;Alfihusni
+      </p>
+    </footer> -->
+  </body>
+</html>
