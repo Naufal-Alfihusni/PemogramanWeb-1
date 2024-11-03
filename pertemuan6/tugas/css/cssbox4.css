@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.atas {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  gap: 10px;
+}
+
+.atas .kotak-kecil {
+  width: 15%;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+.atas .kotak-panjang {
+  width: 85%;
+  height: 100px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+.tengah {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  gap: 10px;
+}
+
+.tengah .tengah-kiri {
+  width: 15%;
+  height: 450px;
+  background-color: greenyellow;
+  border: 1px solid black;
+}
+
+.tengah .tengah-tengah {
+  width: 69%;
+  height: 450px;
+  background-color: grey;
+  border: 1px solid black;
+}
+
+.tengah .tengah-kanan {
+  width: 15%;
+  height: 450px;
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+.bawah {
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+  background-color: blue;
+}
