@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  min-height: 100vh;
+  font-size: 30px;
+}
+
+.padding {
+  padding: 14px;
+}
+
+.kolom1 {
+  width: 20%;
+  height: 100vh;
+  background-color: deeppink;
+}
+
+.kolom2 {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.kolom2 .header {
+  height: 20%;
+  background-color: bisque;
+}
+
+.kolom2 .tengah {
+  display: flex;
+  height: 60%;
+}
+
+.kolom2 .tengah .article {
+  width: 70%;
+}
+
+.kolom2 .tengah .aside {
+  width: 30%;
+  background-color: aqua;
+}
+
+.kolom2 .footer {
+  height: 20%;
+  background-color: bisque;
+}

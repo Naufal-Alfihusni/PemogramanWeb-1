@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+
+#main {
+  display: flex;
+  flex: 1;
+}
+
+#main > article {
+  flex: 1;
+  order: 1;
+}
+
+#main > nav,
+#main > aside {
+  flex: 0 0 20vw;
+}
+
+#main > nav {
+  background-color: blanchedalmond;
+  order: 3;
+}
+
+#main > aside {
+  background-color: pink;
+  order: 2;
+}
+
+header {
+  background-color: chartreuse;
+  height: 20vh;
+}
+
+footer {
+  background-color: rgb(0, 174, 255);
+  height: 20vh;
+}
+
+header,
+footer,
+article,
+nav,
+aside {
+  padding: 1em;
+}
